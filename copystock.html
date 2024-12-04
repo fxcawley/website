@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ed47eedec63a4730bc840074ab50789d</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell code" data-execution_count="1" id="2jntyGK0VgtQ">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> cvxpy <span class="im">as</span> cp</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> Lasso</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> TimeSeriesSplit</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> ipywidgets <span class="im">import</span> widgets</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="2" id="cqio1f1SVklc">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List of popular stocks (tickers)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>stock_list <span class="op">=</span> [<span class="st">&#39;AAPL&#39;</span>, <span class="st">&#39;MSFT&#39;</span>, <span class="st">&#39;GOOGL&#39;</span>, <span class="st">&#39;AMZN&#39;</span>, <span class="st">&#39;NVDA&#39;</span>, <span class="st">&#39;TSLA&#39;</span>, <span class="st">&#39;META&#39;</span>, <span class="st">&#39;JPM&#39;</span>, <span class="st">&#39;V&#39;</span>, <span class="st">&#39;JNJ&#39;</span>]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># List of ETFs (tickers)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># For demonstration, we&#39;ll use a smaller list of popular ETFs</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>etf_list <span class="op">=</span> [</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;SPY&#39;</span>,   <span class="co"># S&amp;P 500 ETF</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;QQQ&#39;</span>,   <span class="co"># Nasdaq-100 ETF</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;DIA&#39;</span>,   <span class="co"># Dow Jones Industrial Average ETF</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;XLK&#39;</span>,   <span class="co"># Technology Select Sector SPDR Fund</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;XLF&#39;</span>,   <span class="co"># Financial Select Sector SPDR Fund</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;XLE&#39;</span>,   <span class="co"># Energy Select Sector SPDR Fund</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;XLV&#39;</span>,   <span class="co"># Health Care Select Sector SPDR Fund</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;XLY&#39;</span>,   <span class="co"># Consumer Discretionary Select Sector SPDR Fund</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;IYR&#39;</span>,   <span class="co"># iShares U.S. Real Estate ETF</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;SMH&#39;</span>,   <span class="co"># VanEck Vectors Semiconductor ETF</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;SOXX&#39;</span>,  <span class="co"># iShares PHLX Semiconductor ETF</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;ARKK&#39;</span>,  <span class="co"># ARK Innovation ETF</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;XBI&#39;</span>,   <span class="co"># SPDR S&amp;P Biotech ETF</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;GDX&#39;</span>,   <span class="co"># VanEck Vectors Gold Miners ETF</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;EEM&#39;</span>,   <span class="co"># iShares MSCI Emerging Markets ETF</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;TLT&#39;</span>,   <span class="co"># iShares 20+ Year Treasury Bond ETF</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;HYG&#39;</span>,   <span class="co"># iShares iBoxx $ High Yield Corporate Bond ETF</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;LQD&#39;</span>,   <span class="co"># iShares iBoxx $ Investment Grade Corporate Bond ETF</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;XLP&#39;</span>,   <span class="co"># Consumer Staples Select Sector SPDR Fund</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;XLU&#39;</span>,   <span class="co"># Utilities Select Sector SPDR Fund</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="3"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:49,&quot;referenced_widgets&quot;:[&quot;3c774354cd314f62b687cdfedb910dfd&quot;,&quot;a4330136ac984972a9b2cfcf6f630d94&quot;,&quot;2cae437350844d6e8d135ffca172fc85&quot;]}"
+id="uVu1kqqvVojk" data-outputId="ed923691-62b9-4d55-f34c-0c27237a58c8">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>stock_dropdown <span class="op">=</span> widgets.Dropdown(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    options<span class="op">=</span>stock_list,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    description<span class="op">=</span><span class="st">&#39;Select Stock:&#39;</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    disabled<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>display(stock_dropdown)</span></code></pre></div>
+<div class="output display_data">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;model_id&quot;</span><span class="fu">:</span><span class="st">&quot;3c774354cd314f62b687cdfedb910dfd&quot;</span><span class="fu">,</span><span class="dt">&quot;version_major&quot;</span><span class="fu">:</span><span class="dv">2</span><span class="fu">,</span><span class="dt">&quot;version_minor&quot;</span><span class="fu">:</span><span class="dv">0</span><span class="fu">}</span></span></code></pre></div>
+</div>
+</div>
+<div class="cell code" data-execution_count="4" id="toAvoow3Vque">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_data(stock_ticker, etf_tickers, start_date, end_date):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    tickers <span class="op">=</span> [stock_ticker] <span class="op">+</span> etf_tickers</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> yf.download(tickers, start<span class="op">=</span>start_date, end<span class="op">=</span>end_date)[<span class="st">&#39;Adj Close&#39;</span>]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> data.dropna()</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="5" id="LR8AEwYCVxQy">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the time period for in-sample and out-of-sample data</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>in_sample_start <span class="op">=</span> <span class="st">&#39;2022-01-01&#39;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>in_sample_end <span class="op">=</span> <span class="st">&#39;2022-12-31&#39;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>out_sample_start <span class="op">=</span> <span class="st">&#39;2023-01-01&#39;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>out_sample_end <span class="op">=</span> <span class="st">&#39;2023-10-31&#39;</span>  <span class="co"># Adjust based on current date</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="6"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="3TZa7GDAVy53" data-outputId="2a0c490f-ffb7-48fc-b35f-0372a083693a">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the selected stock ticker</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>selected_stock <span class="op">=</span> stock_dropdown.value</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Retrieve in-sample data</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>in_sample_data <span class="op">=</span> get_data(selected_stock, etf_list, in_sample_start, in_sample_end)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>in_sample_returns <span class="op">=</span> in_sample_data.pct_change().dropna()</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Retrieve out-of-sample data</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>out_sample_data <span class="op">=</span> get_data(selected_stock, etf_list, out_sample_start, out_sample_end)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>out_sample_returns <span class="op">=</span> out_sample_data.pct_change().dropna()</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>[*********************100%***********************]  21 of 21 completed
+[*********************100%***********************]  21 of 21 completed
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="7" id="DY8FRdCMV0ok">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute correlations</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>correlations <span class="op">=</span> in_sample_returns.corr()[selected_stock].drop(selected_stock)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Select the top 10 positively and top 10 negatively correlated ETFs</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>top_pos_corr <span class="op">=</span> correlations.nlargest(<span class="dv">10</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>top_neg_corr <span class="op">=</span> correlations.nsmallest(<span class="dv">10</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine the selected ETFs</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>selected_etfs <span class="op">=</span> <span class="bu">list</span>(top_pos_corr.index) <span class="op">+</span> <span class="bu">list</span>(top_neg_corr.index)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the returns for the selected ETFs</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>X_in_sample <span class="op">=</span> in_sample_returns[selected_etfs]</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>y_in_sample <span class="op">=</span> in_sample_returns[selected_stock]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="8" id="RDrXq-lzV3g3">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> lasso_regression_with_constraints(X, y, max_features):</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    n_samples, n_features <span class="op">=</span> X.shape</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Standardize features</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    X_scaled <span class="op">=</span> scaler.fit_transform(X)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    y_scaled <span class="op">=</span> y.values</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Define the optimization variables</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    beta <span class="op">=</span> cp.Variable(n_features)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    lambd <span class="op">=</span> cp.Parameter(nonneg<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Lasso objective function</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    objective <span class="op">=</span> cp.Minimize((<span class="dv">1</span> <span class="op">/</span> n_samples) <span class="op">*</span> cp.sum_squares(X_scaled <span class="op">@</span> beta <span class="op">-</span> y_scaled) <span class="op">+</span> lambd <span class="op">*</span> cp.norm1(beta))</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Non-negativity constraints</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    constraints <span class="op">=</span> [beta <span class="op">&gt;=</span> <span class="dv">0</span>]</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Problem definition</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>    problem <span class="op">=</span> cp.Problem(objective, constraints)</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Iteratively increase lambda until we have at most max_features non-zero coefficients</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    lambda_value <span class="op">=</span> <span class="fl">0.001</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>    max_lambda <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>    tol <span class="op">=</span> <span class="fl">1e-4</span></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>    selected <span class="op">=</span> []</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> lambda_value <span class="op">&lt;</span> max_lambda:</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>        lambd.value <span class="op">=</span> lambda_value</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>        problem.solve(solver<span class="op">=</span>cp.SCS)</span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>        beta_value <span class="op">=</span> beta.value</span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>        selected <span class="op">=</span> np.where(beta_value <span class="op">&gt;</span> tol)[<span class="dv">0</span>]</span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(selected) <span class="op">&lt;=</span> max_features:</span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>        lambda_value <span class="op">*=</span> <span class="fl">1.5</span>  <span class="co"># Increase lambda</span></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Warning: Couldn&#39;t reduce features to desired number.&quot;</span>)</span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Retrieve the weights</span></span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>    weights <span class="op">=</span> pd.Series(beta_value, index<span class="op">=</span>X.columns)</span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Keep only non-zero weights</span></span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>    weights <span class="op">=</span> weights[weights <span class="op">&gt;</span> tol]</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> weights</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="9"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="SHS3l5LtV5eE" data-outputId="cb433f16-311b-4f91-a800-1495ca0f3420">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set maximum number of ETFs to select</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>max_etfs <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>weights <span class="op">=</span> lasso_regression_with_constraints(X_in_sample, y_in_sample, max_etfs)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Selected ETFs and Weights:&quot;</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(weights)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Selected ETFs and Weights:
+Ticker
+XLK    0.019299
+XLU    0.000156
+XLP    0.001366
+dtype: float64
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="10"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="yS80iDJWV7CT" data-outputId="c7d155a9-06da-4b37-e403-06da869df052">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create replicating portfolio returns</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>portfolio_in_sample_returns <span class="op">=</span> X_in_sample[weights.index] <span class="op">@</span> weights.values</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate performance metrics</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> performance_metrics(actual_returns, portfolio_returns):</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Correlation</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    corr <span class="op">=</span> np.corrcoef(actual_returns, portfolio_returns)[<span class="dv">0</span>,<span class="dv">1</span>]</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Tracking Error</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    tracking_error <span class="op">=</span> np.std(actual_returns <span class="op">-</span> portfolio_returns) <span class="op">*</span> np.sqrt(<span class="dv">252</span>)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Cumulative Returns</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    cumulative_actual <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> actual_returns).cumprod() <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    cumulative_portfolio <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> portfolio_returns).cumprod() <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    total_return_actual <span class="op">=</span> cumulative_actual.iloc[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>    total_return_portfolio <span class="op">=</span> cumulative_portfolio.iloc[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Volatility</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>    vol_actual <span class="op">=</span> np.std(actual_returns) <span class="op">*</span> np.sqrt(<span class="dv">252</span>)</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>    vol_portfolio <span class="op">=</span> np.std(portfolio_returns) <span class="op">*</span> np.sqrt(<span class="dv">252</span>)</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Sharpe Ratio (Assuming risk-free rate is zero)</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>    sharpe_actual <span class="op">=</span> np.mean(actual_returns) <span class="op">/</span> np.std(actual_returns) <span class="op">*</span> np.sqrt(<span class="dv">252</span>)</span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>    sharpe_portfolio <span class="op">=</span> np.mean(portfolio_returns) <span class="op">/</span> np.std(portfolio_returns) <span class="op">*</span> np.sqrt(<span class="dv">252</span>)</span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>    metrics <span class="op">=</span> {</span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Correlation&#39;</span>: corr,</span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Tracking Error&#39;</span>: tracking_error,</span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Total Return (Stock)&#39;</span>: total_return_actual,</span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Total Return (Portfolio)&#39;</span>: total_return_portfolio,</span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Volatility (Stock)&#39;</span>: vol_actual,</span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Volatility (Portfolio)&#39;</span>: vol_portfolio,</span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Sharpe Ratio (Stock)&#39;</span>: sharpe_actual,</span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Sharpe Ratio (Portfolio)&#39;</span>: sharpe_portfolio</span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> metrics</span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate metrics</span></span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>in_sample_metrics <span class="op">=</span> performance_metrics(y_in_sample, portfolio_in_sample_returns)</span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">In-Sample Performance Metrics:&quot;</span>)</span>
+<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key, value <span class="kw">in</span> in_sample_metrics.items():</span>
+<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>value<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+In-Sample Performance Metrics:
+Correlation: 0.9295
+Tracking Error: 0.3500
+Total Return (Stock): -0.2820
+Total Return (Portfolio): -0.0054
+Volatility (Stock): 0.3560
+Volatility (Portfolio): 0.0065
+Sharpe Ratio (Stock): -0.7599
+Sharpe Ratio (Portfolio): -0.8365
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="11"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="xvciE0EEV_qx" data-outputId="844cdd00-7107-4b0c-de35-39266dbbb0d6">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter out-of-sample ETF returns for selected ETFs</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>X_out_sample <span class="op">=</span> out_sample_returns[weights.index]</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>y_out_sample <span class="op">=</span> out_sample_returns[selected_stock]</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Create replicating portfolio returns</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>portfolio_out_sample_returns <span class="op">=</span> X_out_sample <span class="op">@</span> weights.values</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate metrics</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>out_sample_metrics <span class="op">=</span> performance_metrics(y_out_sample, portfolio_out_sample_returns)</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Out-of-Sample Performance Metrics:&quot;</span>)</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key, value <span class="kw">in</span> out_sample_metrics.items():</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>value<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+Out-of-Sample Performance Metrics:
+Correlation: 0.7934
+Tracking Error: 0.2049
+Total Return (Stock): 0.3674
+Total Return (Portfolio): 0.0057
+Volatility (Stock): 0.2079
+Volatility (Portfolio): 0.0038
+Sharpe Ratio (Stock): 1.9370
+Sharpe Ratio (Portfolio): 1.8253
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="12"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="3x_8lG3vWCNc" data-outputId="e803f7ce-8c74-47c0-a773-75a03b58585a">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># In-sample cumulative returns</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>cumulative_stock_in <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> y_in_sample).cumprod() <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>cumulative_portfolio_in <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> portfolio_in_sample_returns).cumprod() <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Out-of-sample cumulative returns</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>cumulative_stock_out <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> y_out_sample).cumprod() <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>cumulative_portfolio_out <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> portfolio_out_sample_returns).cumprod() <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">10</span>))</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="co"># In-sample plot</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].plot(cumulative_stock_in.index, cumulative_stock_in, label<span class="op">=</span><span class="ss">f&#39;</span><span class="sc">{</span>selected_stock<span class="sc">}</span><span class="ss"> (Stock)&#39;</span>)</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].plot(cumulative_portfolio_in.index, cumulative_portfolio_in, label<span class="op">=</span><span class="st">&#39;Replicating Portfolio&#39;</span>)</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">&#39;In-Sample Cumulative Returns&#39;</span>)</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_ylabel(<span class="st">&#39;Cumulative Return&#39;</span>)</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].legend()</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].grid(<span class="va">True</span>)</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Out-of-sample plot</span></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].plot(cumulative_stock_out.index, cumulative_stock_out, label<span class="op">=</span><span class="ss">f&#39;</span><span class="sc">{</span>selected_stock<span class="sc">}</span><span class="ss"> (Stock)&#39;</span>)</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].plot(cumulative_portfolio_out.index, cumulative_portfolio_out, label<span class="op">=</span><span class="st">&#39;Replicating Portfolio&#39;</span>)</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">&#39;Out-of-Sample Cumulative Returns&#39;</span>)</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_ylabel(<span class="st">&#39;Cumulative Return&#39;</span>)</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].legend()</span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].grid(<span class="va">True</span>)</span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_7818863afd0445e4a3348ac6d7dac9f7/0a13be6cacfa55cd236248cd3c65631b7d69291f.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="14"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000,&quot;referenced_widgets&quot;:[&quot;5eec46108fee400c9da01328a8566375&quot;,&quot;6d0e016e44374c0c838735217e1a2698&quot;,&quot;2f510b3f6cd145caa120207e1630ba8f&quot;]}"
+id="MeRdVz4DWFQb" data-outputId="892287d1-c6ce-4b37-8f8a-4601743b0f4a">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> cvxpy <span class="im">as</span> cp</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> ipywidgets <span class="im">import</span> widgets</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Define stock and ETF lists</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>stock_list <span class="op">=</span> [<span class="st">&#39;AAPL&#39;</span>, <span class="st">&#39;MSFT&#39;</span>, <span class="st">&#39;GOOGL&#39;</span>, <span class="st">&#39;AMZN&#39;</span>, <span class="st">&#39;NVDA&#39;</span>, <span class="st">&#39;TSLA&#39;</span>, <span class="st">&#39;META&#39;</span>, <span class="st">&#39;JPM&#39;</span>, <span class="st">&#39;V&#39;</span>, <span class="st">&#39;JNJ&#39;</span>]</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>etf_list <span class="op">=</span> [</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;SPY&#39;</span>, <span class="st">&#39;QQQ&#39;</span>, <span class="st">&#39;DIA&#39;</span>, <span class="st">&#39;XLK&#39;</span>, <span class="st">&#39;XLF&#39;</span>, <span class="st">&#39;XLE&#39;</span>, <span class="st">&#39;XLV&#39;</span>, <span class="st">&#39;XLY&#39;</span>, <span class="st">&#39;IYR&#39;</span>,</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;SMH&#39;</span>, <span class="st">&#39;SOXX&#39;</span>, <span class="st">&#39;ARKK&#39;</span>, <span class="st">&#39;XBI&#39;</span>, <span class="st">&#39;GDX&#39;</span>, <span class="st">&#39;EEM&#39;</span>, <span class="st">&#39;TLT&#39;</span>, <span class="st">&#39;HYG&#39;</span>, <span class="st">&#39;LQD&#39;</span>, <span class="st">&#39;XLP&#39;</span>, <span class="st">&#39;XLU&#39;</span>,</span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Create dropdown for stock selection</span></span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>stock_dropdown <span class="op">=</span> widgets.Dropdown(</span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>    options<span class="op">=</span>stock_list,</span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>    description<span class="op">=</span><span class="st">&#39;Select Stock:&#39;</span>,</span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>    disabled<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a>display(stock_dropdown)</span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> on_stock_change(change):</span>
+<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> change[<span class="st">&#39;type&#39;</span>] <span class="op">==</span> <span class="st">&#39;change&#39;</span> <span class="kw">and</span> change[<span class="st">&#39;name&#39;</span>] <span class="op">==</span> <span class="st">&#39;value&#39;</span>:</span>
+<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a>        selected_stock <span class="op">=</span> change[<span class="st">&#39;new&#39;</span>]</span>
+<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">You selected: </span><span class="sc">{</span>selected_stock<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Data retrieval</span></span>
+<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a>        in_sample_start <span class="op">=</span> <span class="st">&#39;2022-01-01&#39;</span></span>
+<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>        in_sample_end <span class="op">=</span> <span class="st">&#39;2022-12-31&#39;</span></span>
+<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a>        out_sample_start <span class="op">=</span> <span class="st">&#39;2023-01-01&#39;</span></span>
+<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a>        out_sample_end <span class="op">=</span> <span class="st">&#39;2023-10-31&#39;</span>  <span class="co"># Adjust based on current date</span></span>
+<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-37"><a href="#cb18-37" aria-hidden="true" tabindex="-1"></a>        in_sample_data <span class="op">=</span> get_data(selected_stock, etf_list, in_sample_start, in_sample_end)</span>
+<span id="cb18-38"><a href="#cb18-38" aria-hidden="true" tabindex="-1"></a>        in_sample_returns <span class="op">=</span> in_sample_data.pct_change().dropna()</span>
+<span id="cb18-39"><a href="#cb18-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-40"><a href="#cb18-40" aria-hidden="true" tabindex="-1"></a>        out_sample_data <span class="op">=</span> get_data(selected_stock, etf_list, out_sample_start, out_sample_end)</span>
+<span id="cb18-41"><a href="#cb18-41" aria-hidden="true" tabindex="-1"></a>        out_sample_returns <span class="op">=</span> out_sample_data.pct_change().dropna()</span>
+<span id="cb18-42"><a href="#cb18-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-43"><a href="#cb18-43" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Correlation computation</span></span>
+<span id="cb18-44"><a href="#cb18-44" aria-hidden="true" tabindex="-1"></a>        correlations <span class="op">=</span> in_sample_returns.corr()[selected_stock].drop(selected_stock)</span>
+<span id="cb18-45"><a href="#cb18-45" aria-hidden="true" tabindex="-1"></a>        top_pos_corr <span class="op">=</span> correlations.nlargest(<span class="dv">10</span>)</span>
+<span id="cb18-46"><a href="#cb18-46" aria-hidden="true" tabindex="-1"></a>        top_neg_corr <span class="op">=</span> correlations.nsmallest(<span class="dv">10</span>)</span>
+<span id="cb18-47"><a href="#cb18-47" aria-hidden="true" tabindex="-1"></a>        selected_etfs <span class="op">=</span> <span class="bu">list</span>(top_pos_corr.index) <span class="op">+</span> <span class="bu">list</span>(top_neg_corr.index)</span>
+<span id="cb18-48"><a href="#cb18-48" aria-hidden="true" tabindex="-1"></a>        X_in_sample <span class="op">=</span> in_sample_returns[selected_etfs]</span>
+<span id="cb18-49"><a href="#cb18-49" aria-hidden="true" tabindex="-1"></a>        y_in_sample <span class="op">=</span> in_sample_returns[selected_stock]</span>
+<span id="cb18-50"><a href="#cb18-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-51"><a href="#cb18-51" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Model fitting</span></span>
+<span id="cb18-52"><a href="#cb18-52" aria-hidden="true" tabindex="-1"></a>        max_etfs <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb18-53"><a href="#cb18-53" aria-hidden="true" tabindex="-1"></a>        weights <span class="op">=</span> lasso_regression_with_constraints(X_in_sample, y_in_sample, max_etfs)</span>
+<span id="cb18-54"><a href="#cb18-54" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Selected ETFs and Weights:&quot;</span>)</span>
+<span id="cb18-55"><a href="#cb18-55" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(weights)</span>
+<span id="cb18-56"><a href="#cb18-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-57"><a href="#cb18-57" aria-hidden="true" tabindex="-1"></a>        <span class="co"># In-sample performance</span></span>
+<span id="cb18-58"><a href="#cb18-58" aria-hidden="true" tabindex="-1"></a>        portfolio_in_sample_returns <span class="op">=</span> X_in_sample[weights.index] <span class="op">@</span> weights.values</span>
+<span id="cb18-59"><a href="#cb18-59" aria-hidden="true" tabindex="-1"></a>        in_sample_metrics <span class="op">=</span> performance_metrics(y_in_sample, portfolio_in_sample_returns)</span>
+<span id="cb18-60"><a href="#cb18-60" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">In-Sample Performance Metrics:&quot;</span>)</span>
+<span id="cb18-61"><a href="#cb18-61" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> key, value <span class="kw">in</span> in_sample_metrics.items():</span>
+<span id="cb18-62"><a href="#cb18-62" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>value<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb18-63"><a href="#cb18-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-64"><a href="#cb18-64" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Out-of-sample performance</span></span>
+<span id="cb18-65"><a href="#cb18-65" aria-hidden="true" tabindex="-1"></a>        X_out_sample <span class="op">=</span> out_sample_returns[weights.index]</span>
+<span id="cb18-66"><a href="#cb18-66" aria-hidden="true" tabindex="-1"></a>        y_out_sample <span class="op">=</span> out_sample_returns[selected_stock]</span>
+<span id="cb18-67"><a href="#cb18-67" aria-hidden="true" tabindex="-1"></a>        portfolio_out_sample_returns <span class="op">=</span> X_out_sample <span class="op">@</span> weights.values</span>
+<span id="cb18-68"><a href="#cb18-68" aria-hidden="true" tabindex="-1"></a>        out_sample_metrics <span class="op">=</span> performance_metrics(y_out_sample, portfolio_out_sample_returns)</span>
+<span id="cb18-69"><a href="#cb18-69" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Out-of-Sample Performance Metrics:&quot;</span>)</span>
+<span id="cb18-70"><a href="#cb18-70" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> key, value <span class="kw">in</span> out_sample_metrics.items():</span>
+<span id="cb18-71"><a href="#cb18-71" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>value<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb18-72"><a href="#cb18-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-73"><a href="#cb18-73" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Visualization</span></span>
+<span id="cb18-74"><a href="#cb18-74" aria-hidden="true" tabindex="-1"></a>        cumulative_stock_in <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> y_in_sample).cumprod() <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb18-75"><a href="#cb18-75" aria-hidden="true" tabindex="-1"></a>        cumulative_portfolio_in <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> portfolio_in_sample_returns).cumprod() <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb18-76"><a href="#cb18-76" aria-hidden="true" tabindex="-1"></a>        cumulative_stock_out <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> y_out_sample).cumprod() <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb18-77"><a href="#cb18-77" aria-hidden="true" tabindex="-1"></a>        cumulative_portfolio_out <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> portfolio_out_sample_returns).cumprod() <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb18-78"><a href="#cb18-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-79"><a href="#cb18-79" aria-hidden="true" tabindex="-1"></a>        fig, ax <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">10</span>))</span>
+<span id="cb18-80"><a href="#cb18-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-81"><a href="#cb18-81" aria-hidden="true" tabindex="-1"></a>        <span class="co"># In-sample plot</span></span>
+<span id="cb18-82"><a href="#cb18-82" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">0</span>].plot(cumulative_stock_in.index, cumulative_stock_in, label<span class="op">=</span><span class="ss">f&#39;</span><span class="sc">{</span>selected_stock<span class="sc">}</span><span class="ss"> (Stock)&#39;</span>)</span>
+<span id="cb18-83"><a href="#cb18-83" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">0</span>].plot(cumulative_portfolio_in.index, cumulative_portfolio_in, label<span class="op">=</span><span class="st">&#39;Replicating Portfolio&#39;</span>)</span>
+<span id="cb18-84"><a href="#cb18-84" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">0</span>].set_title(<span class="st">&#39;In-Sample Cumulative Returns&#39;</span>)</span>
+<span id="cb18-85"><a href="#cb18-85" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">0</span>].set_ylabel(<span class="st">&#39;Cumulative Return&#39;</span>)</span>
+<span id="cb18-86"><a href="#cb18-86" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">0</span>].legend()</span>
+<span id="cb18-87"><a href="#cb18-87" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">0</span>].grid(<span class="va">True</span>)</span>
+<span id="cb18-88"><a href="#cb18-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-89"><a href="#cb18-89" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Out-of-sample plot</span></span>
+<span id="cb18-90"><a href="#cb18-90" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">1</span>].plot(cumulative_stock_out.index, cumulative_stock_out, label<span class="op">=</span><span class="ss">f&#39;</span><span class="sc">{</span>selected_stock<span class="sc">}</span><span class="ss"> (Stock)&#39;</span>)</span>
+<span id="cb18-91"><a href="#cb18-91" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">1</span>].plot(cumulative_portfolio_out.index, cumulative_portfolio_out, label<span class="op">=</span><span class="st">&#39;Replicating Portfolio&#39;</span>)</span>
+<span id="cb18-92"><a href="#cb18-92" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">1</span>].set_title(<span class="st">&#39;Out-of-Sample Cumulative Returns&#39;</span>)</span>
+<span id="cb18-93"><a href="#cb18-93" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">1</span>].set_ylabel(<span class="st">&#39;Cumulative Return&#39;</span>)</span>
+<span id="cb18-94"><a href="#cb18-94" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">1</span>].legend()</span>
+<span id="cb18-95"><a href="#cb18-95" aria-hidden="true" tabindex="-1"></a>        ax[<span class="dv">1</span>].grid(<span class="va">True</span>)</span>
+<span id="cb18-96"><a href="#cb18-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-97"><a href="#cb18-97" aria-hidden="true" tabindex="-1"></a>        plt.tight_layout()</span>
+<span id="cb18-98"><a href="#cb18-98" aria-hidden="true" tabindex="-1"></a>        plt.show()</span>
+<span id="cb18-99"><a href="#cb18-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-100"><a href="#cb18-100" aria-hidden="true" tabindex="-1"></a>stock_dropdown.observe(on_stock_change)</span></code></pre></div>
+<div class="output display_data">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;model_id&quot;</span><span class="fu">:</span><span class="st">&quot;5eec46108fee400c9da01328a8566375&quot;</span><span class="fu">,</span><span class="dt">&quot;version_major&quot;</span><span class="fu">:</span><span class="dv">2</span><span class="fu">,</span><span class="dt">&quot;version_minor&quot;</span><span class="fu">:</span><span class="dv">0</span><span class="fu">}</span></span></code></pre></div>
+</div>
+<div class="output stream stderr">
+<pre><code>[**************        29%                       ]  6 of 21 completed</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>
+You selected: NVDA
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>[*********************100%***********************]  21 of 21 completed
+[*********************100%***********************]  21 of 21 completed
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>
+Selected ETFs and Weights:
+Ticker
+SMH     0.029531
+QQQ     0.003965
+ARKK    0.004697
+TLT     0.000293
+dtype: float64
+
+In-Sample Performance Metrics:
+Correlation: 0.9438
+Tracking Error: 0.6162
+Total Return (Stock): -0.5144
+Total Return (Portfolio): -0.0158
+Volatility (Stock): 0.6316
+Volatility (Portfolio): 0.0164
+Sharpe Ratio (Stock): -0.8360
+Sharpe Ratio (Portfolio): -0.9732
+
+Out-of-Sample Performance Metrics:
+Correlation: 0.8168
+Tracking Error: 0.5065
+Total Return (Stock): 1.8764
+Total Return (Portfolio): 0.0123
+Volatility (Stock): 0.5148
+Volatility (Portfolio): 0.0102
+Sharpe Ratio (Stock): 2.7500
+Sharpe Ratio (Portfolio): 1.4634
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_7818863afd0445e4a3348ac6d7dac9f7/467e3d58e880c81d4631d20637292a12ea7f6890.png" /></p>
+</div>
+</div>
+<div class="cell code" id="PCQXc5_FWLvW">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>
