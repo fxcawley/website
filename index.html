@@ -3,95 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Cool Three.js Landing</title>
+    <title>Liam Cawley</title>
+    
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Three.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-        canvas {
-            display: block;
-        }
-        #enter-btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0.8);
-            border: none;
-            border-radius: 8px;
-            padding: 15px 30px;
-            font-size: 20px;
-            color: #333;
-            cursor: pointer;
-            z-index: 10;
-        }
-        #enter-btn:hover {
-            background: rgba(255, 255, 255, 1);
-        }
-    </style>
 </head>
 <body>
     <button id="enter-btn" onclick="navigateToProjects()">Enter Projects</button>
     <canvas id="three-canvas"></canvas>
-
-    <script>
-        // Basic Three.js setup
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('three-canvas') });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
-
-        // Add a rotating cube
-        const geometry = new THREE.BoxGeometry();
-        const material = new THREE.MeshStandardMaterial({ color: 0x007bff });
-        const cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
-
-        // Add a glowing sphere
-        const sphereGeometry = new THREE.SphereGeometry(1, 32, 32);
-        const sphereMaterial = new THREE.MeshStandardMaterial({ color: 0xff5733, emissive: 0xff5733 });
-        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-        sphere.position.x = 3;
-        scene.add(sphere);
-
-        // Add light
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-        scene.add(ambientLight);
-
-        const pointLight = new THREE.PointLight(0xffffff, 1);
-        pointLight.position.set(5, 5, 5);
-        scene.add(pointLight);
-
-        // Position camera
-        camera.position.z = 5;
-
-        // Animation loop
-        function animate() {
-            requestAnimationFrame(animate);
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-            sphere.rotation.y += 0.01;
-            renderer.render(scene, camera);
-        }
-        animate();
-
-        // Resize handling
-        window.addEventListener('resize', () => {
-            const width = window.innerWidth;
-            const height = window.innerHeight;
-            renderer.setSize(width, height);
-            camera.aspect = width / height;
-            camera.updateProjectionMatrix();
-        });
-
-        // Navigate to Projects page
-        function navigateToProjects() {
-            window.location.href = "projects.html";
-        }
-    </script>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
