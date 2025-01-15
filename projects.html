@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Liam Cawley</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    
+    <!-- React and ReactDOM -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel for JSX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+
+    <!-- Lucide React -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide-react.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { FileText, ExternalLink, Github } = lucide;
+        
+        const ProjectsPage = () => {
+            const projects = [
+                {
+                    title: "SGD Approximations with Preconditioning",
+                    description: "An in-depth exploration of stochastic gradient descent optimizations using preconditioned methods to improve convergence rates and stability in deep learning models.",
+                    tags: ["Machine Learning", "Optimization", "PyTorch"],
+                    pdfPreview: "/api/placeholder/400/500",
+                },
+                {
+                    title: "LoRA Using BERT",
+                    description: "Implementation and analysis of Low-Rank Adaptation techniques with BERT models, demonstrating efficient fine-tuning methods for transformer architectures.",
+                    tags: ["NLP", "Transformers", "Deep Learning"],
+                    pdfPreview: "/api/placeholder/400/500",
+                },
+                {
+                    title: "ResNet Architecture Exploration",
+                    description: "Comprehensive study of deep residual networks, including implementation of various ResNet architectures and analysis of their performance on image recognition tasks.",
+                    tags: ["Computer Vision", "CNN", "Deep Learning"],
+                    pdfPreview: "/api/placeholder/400/500",
+                }
+            ];
+
+            return (
+                <div className="min-h-screen bg-gray-50">
+                    {/* Navigation */}
+                    <nav className="bg-white shadow-sm">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div className="flex justify-between h-16">
+                                <div className="flex items-center">
+                                    <span className="text-xl font-semibold">Liam Cawley</span>
+                                </div>
+                                <div className="flex items-center space-x-4">
+                                    <a href="index.html" className="text-gray-600 hover:text-gray-900">Home</a>
+                                    <a href="projects.html" className="text-blue-600 font-semibold">Projects</a>
+                                    <a href="copystock.html" className="text-gray-600 hover:text-gray-900">CopyStock</a>
+                                    <a href="about.html" className="text-gray-600 hover:text-gray-900">About</a>
+                                    <a href="contact.html" className="text-gray-600 hover:text-gray-900">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    {/* Header */}
+                    <div className="bg-white">
+                        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+                            <div className="text-center">
+                                <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+                                    My Projects
+                                </h1>
+                                <p className="mt-4 max-w-3xl mx-auto text-xl text-gray-500">
+                                    Explore my work in machine learning, data science, and software development
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Projects Grid */}
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+                        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                            {projects.map((project, index) => (
+                                <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                                    {/* Preview Image */}
+                                    <div className="relative h-64 bg-gray-200">
+                                        <img
+                                            src={project.pdfPreview}
+                                            alt={`Preview of ${project.title}`}
+                                            className="w-full h-full object-cover"
+                                        />
+                                        <div className="absolute top-4 right-4 flex space-x-2">
+                                            <button className="p-2 bg-white rounded-full shadow-lg hover:bg-gray-100">
+                                                <FileText className="w-5 h-5 text-gray-600" />
+                                            </button>
+                                            <button className="p-2 bg-white rounded-full shadow-lg hover:bg-gray-100">
+                                                <Github className="w-5 h-5 text-gray-600" />
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    {/* Content */}
+                                    <div className="p-6">
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                                            {project.title}
+                                        </h3>
+                                        <p className="text-gray-600 mb-4">
+                                            {project.description}
+                                        </p>
+                                        <div className="flex flex-wrap gap-2">
+                                            {project.tags.map((tag, tagIndex) => (
+                                                <span
+                                                    key={tagIndex}
+                                                    className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800"
+                                                >
+                                                    {tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    {/* Footer */}
+                                    <div className="px-6 py-4 bg-gray-50 flex justify-between items-center">
+                                        <button className="text-blue-600 hover:text-blue-800 flex items-center gap-2">
+                                            View Project <ExternalLink className="w-4 h-4" />
+                                        </button>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Footer */}
+                    <footer className="bg-white">
+                        <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+                            <p className="text-center text-gray-400">
+                                © 2024 Liam Cawley. All rights reserved.
+                            </p>
+                        </div>
+                    </footer>
+                </div>
+            );
+        };
+
+        // Render the app
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<ProjectsPage />);
+    </script>
+</body>
+</html>
